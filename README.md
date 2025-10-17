@@ -13,6 +13,17 @@ Additionally, the tool supports unpacking all compatible formats and some other 
 
 Although the most common formats are already supported, the tool is still under development and new functions and other formats will be added over time.
 
+## Changes in this Fork
+This is a fork of version [1.8.0](https://github.com/Venomalia/DolphinTextureExtraction-tool/releases/tag/1.8.0) exactly. I had issues with extracting textures from `.LZ` files with the commits in `main` made after the release of the 1.8.0 release, so that's why the fork is reverted.
+
+The only difference from the 1.8.0 release is that this fork will extract the textures with their original file names. This makes it much easier to search for textures by name if for instance one of the models you've also extracted are missing textures.
+
+There is only a windows x64 release built, however it should be completely possible to build to a different os from source if you know what you are doing.
+
+I have no plans to further update this. Although I doubt it, for all i know this might break the extraction of some textures as I have a very limited amount of knowledge about this codebase.
+
+Unless I find I need more utility out of this there will be no further updates.
+
 ## Download
 This is a .NET 6.0 application and requires the .NET Runtime 6.0. If you don't have it installed yet, you can download it from [here](https://dotnet.microsoft.com/en-us/download/dotnet/6.0).
 
