@@ -251,7 +251,8 @@ namespace DolphinTextureExtraction.Scans
                                 }
 
                                 //Create the path and save the texture.
-                                string textureName = tex.GetDolphinTextureHash(i, tlutHash, Option.DolphinMipDetection, IsArbitraryMipmap == true, tlutHash2) + ".png";
+                                //string textureName = tex.GetDolphinTextureHash(i, tlutHash, Option.DolphinMipDetection, IsArbitraryMipmap == true, tlutHash2) + ".png";
+                                string textureName = so.File.Name + ".png";
                                 string path = Path.Combine(SaveDirectory, textureName);
                                 image[i].SaveAsPng(path);
 
